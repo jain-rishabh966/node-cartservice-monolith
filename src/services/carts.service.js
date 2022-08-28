@@ -43,8 +43,8 @@ module.exports = {
   },
 
   removeItemInCart: (cartId, productId) => {
-    if (sampleDb.listOfProducts[itemId] && sampleDb.carts[cartId]) {
-      sampleDb.carts[cartId].products.delete(itemId);
+    if (sampleDb.listOfProducts[productId] && sampleDb.carts[cartId]) {
+      sampleDb.carts[cartId].products.delete(productId);
     }
 
     return listItemsInCart(cartId);
